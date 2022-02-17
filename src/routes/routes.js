@@ -7,10 +7,10 @@ import { Routes, Route } from "react-router-dom";
 // import DetailClassReviewGrade from "../pages/Class/DetailClassReviewGrade";
 // import VerifyEmail from "../pages/VerifyEmail/VerifyEmail";
 import Form from "../components/MyForm/MyForm";
-import Home from "../components/Home/Form";
+import Home from "../components/Home/Home";
+import ShareDataAndFunction from "../components/ShareDataAndFunction/ShareDataAndFunction";
 
-// const Login = lazy(() => import("../pages/Login/Login"));
-
+// const ShareDataAndFunction = lazy(() => import("../components/ShareDataAndFunction/ShareDataAndFunction"));
 
 const AuthRoutes = () => {
   return (
@@ -18,6 +18,7 @@ const AuthRoutes = () => {
       <Routes>
         <Route exact path={'/'} element={<Home name='Vinh' />} />
         <Route exact path={'/form'} element={<Form />} />
+        <Route exact path={'/share-data-and-function'} element={<ShareDataAndFunction />} />
         {/* <Route exact path="*" element={<PageNotFound/>} /> */}
       </Routes>
     // </Suspense>
